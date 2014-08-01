@@ -119,7 +119,7 @@ def main():
             qualityScoreHeader = fastq_line
         elif count ==4:
             qual = fastq_line.rstrip()
-            qual = qual1[startTarget:endTarget]
+            qual = qual[startTarget:endTarget]
 
             # reverse complement reads
             nSequences = nSequences+1  # total reads
